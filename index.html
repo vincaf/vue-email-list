@@ -15,7 +15,7 @@
         <div class="container text-center">
             <h1 class="p-2 mt-3">GENERATORE DI EMAIL</h1>
             <p class="fs-5">Clicca sul bottone per generare automaticamente 10 mail</p>
-            <button class="btn btn-lg btn-primary p-3 px-5 my-3">INIZIA</button>
+            <button @click="generateNewMail()" class="btn btn-lg btn-primary p-3 px-5 my-3">INIZIA</button>
 
             <h4 class="p-2">{{ mailGenerated }}</h3>
         </div>
