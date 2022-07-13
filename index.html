@@ -17,7 +17,7 @@
             <p class="fs-5">Clicca sul bottone per generare automaticamente 10 mail</p>
             <button @click="generateNewMail()" class="btn btn-lg btn-primary p-3 px-5 mt-2 mb-3">INIZIA</button>
 
-            <p class="p-1 fw-bold" v-for="mail in listMailGenerated">{{ mail }}</p>
+            <p class="p-1 fw-bold" v-for="mail in listMailGenerated" v-if="listMailGenerated.length === 10">{{ mail }}</p>
         </div>
     </div>
     
